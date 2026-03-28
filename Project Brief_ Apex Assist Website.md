@@ -1,52 +1,61 @@
 # Project Brief: Apex Assist Website
 
 ## Overview
-**Project Name:** Apex Assist
-**Goal:** Create a clean, modern, professional, and hyper-local personal assistance website for a student offering services in Brighton, Victoria, Australia.
-**Target Audience:** Busy families, parents, and older residents within a 10-minute drive of Dendy Street, Brighton.
-**Tone:** Friendly, Calm, Simple, Professional.
+**Project Name:** Apex Assist  
+**Owner / voice:** Lucas (Year 9, Brighton VIC)  
+**Goal:** Clean, modern, professional, hyper-local site for a student-run assistance business.  
+**Target Audience:** Busy families, parents, and older residents within ~10 minutes of Dendy Street, Brighton.  
+**Tone:** Friendly, calm, simple, professional.
 
 ## Tech Stack
-- **Framework:** Next.js (React)
+- **Framework:** Next.js (App Router)
 - **Styling:** Tailwind CSS
 - **Font:** Outfit (Google Fonts)
-- **Design Style:** Minimal, clean, modern, plenty of whitespace, simple icons, slightly rounded edges.
+- **Hosting:** Vercel (GitHub integration)
 
 ## Design System
-- **Primary Color:** Pale Green (e.g., `#E8F5E9` or a soft sage)
-- **Secondary Color:** Black (for text and professional accents)
-- **Background:** White or very light tones
-- **Typography:** Use **Outfit** for all headings and body text.
+- **Primary colour:** Pale green (`#E8F5E9` / sage accents)
+- **Text / accents:** Black (`ink`)
+- **Background:** White / very light
+- **Typography:** Outfit for headings and body
+- **UI:** Minimal, rounded cards, simple icons (Lucide)
 
-## Site Structure (Single Page)
-1. **Hero Section**
-   - Clear value proposition for local assistance.
-   - Primary CTA: "Text Me" (Prominent button).
-2. **About Section**
-   - Brief introduction as a local student based in Brighton.
-   - Focus on reliability and making life simpler.
-3. **Services Section (Grid Layout)**
-   - Equal weight for all categories:
-     - Home Organisation
-     - Tutoring & Homework Help
-     - Tech Help
-     - Gardening & Outdoor Work
-     - Pet & House Help
-   - Clean card layout with simple icons.
-4. **Pricing Section**
-   - Clear, tiered pricing for different service types.
-5. **Availability Section**
-   - Display specific hours: Thursday afternoons (<6pm) and every second Saturday (afternoons).
-6. **Contact Section**
-   - Primary focus on Texting.
-   - Simple form: Name, Phone Number, Message.
-   - Footer: "Serving Brighton, Victoria (10-minute radius from Dendy St)"
+## Site structure (multi-page)
 
-## Key Requirements
-- **Mobile-First Design:** Optimized for quick access on phones.
-- **Hyper-Local Focus:** Clearly state the service area is within a 10-minute drive of Dendy Street, Brighton.
-- **Scalable Brand:** Use "Apex Assist" branding throughout to allow for future growth.
-- **Clean UI:** Emphasize whitespace and a "calm" user experience.
+### Home (`/`)
+1. **Hero** — Value proposition, “Text me”, local radius (Dendy St).
+2. **About Lucas (biography)** — Personal intro, credibility (school leadership, Da Vinci / Ethics programs, tutoring focus), sports/hobbies where appropriate, note about growing the team with trusted friends.
+3. **Services preview** — Cards linking to **individual service URLs** (not full service copy on the home page).
+4. **Pricing** — Tiered placeholder rates (confirm with Lucas).
+5. **Availability** — **Thursday** afternoons, finish before **6:00 pm**. **Every second Saturday** from about **1:00 pm** (afternoons).
+6. **Contact** — SMS-first + short form (opens SMS).
+
+### Services index (`/services`)
+- List of all services with links to detail pages.
+
+### Service detail pages (`/services/[slug]`)
+Each page includes: intro, **why choose Lucas**, **what’s included**, optional note, CTA to contact, prev/next links.
+
+| Slug | Focus |
+|------|--------|
+| `home-organisation` | Decluttering, sorting, light tidy-ups |
+| `tutoring` | **Primary only** — **maths**, **science**, **reading**; **in-home OR online** |
+| `tech-help` | Devices, Wi‑Fi, email — senior-friendly tone |
+| `gardening` | Light outdoor / gardening work |
+| `pet-house` | Feeding, short walks (meet first), mail, plants |
+
+### Future / operations (copy may mention)
+- Plan to involve **trusted friends** for tutoring and hands-on help when Lucas is unavailable (client agreement first).
+
+## Key requirements
+- **Mobile-first**
+- **Hyper-local** (10-minute radius from Dendy St)
+- **Brand:** “Apex Assist” throughout
+- **Separate pages** for each service; **biography lives on the home page**
+
+## Content source of truth (code)
+- Service titles, blurbs, and long-form service copy: `lib/services.ts`
+- SMS placeholders: `lib/site.ts` / `.env.local` (`NEXT_PUBLIC_SMS_*`)
 
 ---
-*Note: Final copy and specific text content will be provided separately.*
+*Pricing figures on the site are placeholders until final rates are confirmed.*

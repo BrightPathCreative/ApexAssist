@@ -9,9 +9,12 @@ const outfit = Outfit({
 });
 
 export const metadata: Metadata = {
-  title: "Apex Assist — Personal help in Brighton, VIC",
+  title: {
+    default: "Apex Assist — Personal help in Brighton, VIC",
+    template: "%s — Apex Assist",
+  },
   description:
-    "Friendly local assistance for busy families near Dendy Street, Brighton. Organisation, tutoring, tech help, gardening, and pet & house help.",
+    "Local help from Lucas: primary tutoring (maths, science, reading), tech support, gardening, pet & house help, and home organisation near Dendy Street, Brighton.",
 };
 
 export default function RootLayout({
