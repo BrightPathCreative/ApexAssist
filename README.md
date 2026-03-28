@@ -1,6 +1,6 @@
 # Apex Assist — website
 
-Next.js + Tailwind site for Apex Assist (Brighton, VIC). Deploy on [Vercel](https://vercel.com).
+Next.js + Tailwind site for Apex Assist (Brighton Central). Deploy on [Vercel](https://vercel.com).
 
 **Routes:** `/` (home + Lucas bio), `/services` (index), `/services/[slug]` (one page per service — see `lib/services.ts`).
 

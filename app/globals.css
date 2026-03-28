@@ -7,6 +7,6 @@
     scroll-behavior: smooth;
   }
   body {
-    @apply bg-white text-ink antialiased;
+    @apply bg-primary text-ink antialiased;
   }
 }

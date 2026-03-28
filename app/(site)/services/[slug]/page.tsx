@@ -78,7 +78,7 @@ export default async function ServicePage({ params }: Props) {
 
         <div className="mt-14 flex flex-col gap-4 border-t border-ink/10 pt-10 sm:flex-row sm:items-center sm:justify-between">
           <Link
-            href="/#contact"
+            href="/contact"
             className="inline-flex items-center justify-center rounded-xl bg-ink px-6 py-3.5 text-[15px] font-medium text-white transition hover:bg-ink/90"
           >
             Text me about this service

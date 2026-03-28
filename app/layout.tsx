@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Outfit } from "next/font/google";
+import { AREA_LABEL } from "@/lib/location";
 import "./globals.css";
 
 const outfit = Outfit({
@@ -10,11 +11,10 @@ const outfit = Outfit({
 
 export const metadata: Metadata = {
   title: {
-    default: "Apex Assist — Personal help in Brighton, VIC",
+    default: "Apex Assist — Personal help in Brighton Central",
     template: "%s — Apex Assist",
   },
-  description:
-    "Local help from Lucas: primary tutoring (maths, science, reading), tech support, gardening, pet & house help, and home organisation near Dendy Street, Brighton.",
+  description: `Local help from Lucas: primary tutoring (maths, science, reading), tech support, gardening, pet & house help, and home organisation in ${AREA_LABEL}.`,
 };
 
 export default function RootLayout({

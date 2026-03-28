@@ -4,7 +4,7 @@ import { SERVICE_ORDER, servicesBySlug } from "@/lib/services";
 export const metadata = {
   title: "Services",
   description:
-    "Tutoring, tech help, gardening, pet and house help, and home organisation in Brighton — Apex Assist.",
+    "Tutoring, tech help, gardening, pet and house help, and home organisation in Brighton Central — Apex Assist.",
 };
 
 export default function ServicesIndexPage() {
@@ -22,25 +22,54 @@ export default function ServicesIndexPage() {
           Services
         </h1>
         <p className="mt-4 max-w-2xl text-[17px] leading-relaxed text-ink/70">
-          Each page explains why local families and seniors choose Apex Assist, what
-          is included, and how I like to work. Start with whatever fits your week.
+          Each service has its own page — benefits, what&apos;s included, and how I
+          work. Start with whatever fits your week.
         </p>
-        <ul className="mt-12 space-y-3">
+
+        <ul className="mt-10 grid gap-4 sm:grid-cols-2">
           {SERVICE_ORDER.map((slug) => {
             const s = servicesBySlug[slug];
+            const Icon = s.icon;
             return (
               <li key={slug}>
                 <Link
                   href={`/services/${slug}`}
-                  className="flex flex-col gap-1 rounded-2xl border border-ink/8 bg-primary/25 px-5 py-4 transition hover:border-ink/15 hover:bg-primary/40 sm:flex-row sm:items-center sm:justify-between"
+                  className="flex h-full gap-4 rounded-2xl border border-ink/5 bg-primary/30 p-5 shadow-sm transition hover:border-ink/15 hover:bg-primary/45"
                 >
-                  <span className="font-medium text-ink">{s.title}</span>
-                  <span className="text-sm text-ink/60">{s.cardBlurb}</span>
+                  <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-white text-ink shadow-sm">
+                    <Icon className="h-5 w-5" strokeWidth={1.75} aria-hidden />
+                  </span>
+                  <div>
+                    <h2 className="font-medium text-ink">{s.title}</h2>
+                    <p className="mt-1.5 text-[15px] leading-relaxed text-ink/65">
+                      {s.cardBlurb}
+                    </p>
+                    <span className="mt-3 inline-block text-sm font-medium text-ink underline decoration-ink/25 underline-offset-2">
+                      Read more
+                    </span>
+                  </div>
                 </Link>
               </li>
             );
           })}
         </ul>
+
+        <p className="mt-12 text-center text-[17px] text-ink/70">
+          Ready to book?{" "}
+          <Link
+            href="/contact"
+            className="font-medium text-ink underline decoration-ink/30 underline-offset-4"
+          >
+            Contact me
+          </Link>
+          {" · "}
+          <Link
+            href="/pricing"
+            className="font-medium text-ink underline decoration-ink/30 underline-offset-4"
+          >
+            See pricing
+          </Link>
+        </p>
       </div>
     </main>
   );

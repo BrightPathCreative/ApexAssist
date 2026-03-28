@@ -2,9 +2,9 @@
 
 ## Overview
 **Project Name:** Apex Assist  
-**Owner / voice:** Lucas (Year 9, Brighton VIC)  
+**Owner / voice:** Lucas (Year 9, Brighton Central)  
 **Goal:** Clean, modern, professional, hyper-local site for a student-run assistance business.  
-**Target Audience:** Busy families, parents, and older residents within ~10 minutes of Dendy Street, Brighton.  
+**Target Audience:** Busy families, parents, and older residents in **Brighton Central**.  
 **Tone:** Friendly, calm, simple, professional.
 
 ## Tech Stack
@@ -20,15 +20,23 @@
 - **Typography:** Outfit for headings and body
 - **UI:** Minimal, rounded cards, simple icons (Lucide)
 
-## Site structure (multi-page)
+## Site structure (multi-page, separate routes — no in-page anchor nav)
 
 ### Home (`/`)
-1. **Hero** — Value proposition, “Text me”, local radius (Dendy St).
-2. **About Lucas (biography)** — Personal intro, credibility (school leadership, Da Vinci / Ethics programs, tutoring focus), sports/hobbies where appropriate, note about growing the team with trusted friends.
-3. **Services preview** — Cards linking to **individual service URLs** (not full service copy on the home page).
-4. **Pricing** — Tiered placeholder rates (confirm with Lucas).
-5. **Availability** — **Thursday** afternoons, finish before **6:00 pm**. **Every second Saturday** from about **1:00 pm** (afternoons).
-6. **Contact** — SMS-first + short form (opens SMS).
+- **Hero** — Value proposition, “Text me”, link to **Contact** page (not `#contact`).
+- **Hub** — Cards linking to **About**, **Services**, **Pricing**, **Hours**, **Contact** as **separate URLs**.
+
+### About (`/about`)
+- **About Lucas** — Full biography (moved off home).
+
+### Pricing (`/pricing`)
+- Tiered rates (`lib/pricing.ts`).
+
+### Hours (`/hours`)
+- **Thursday** before **6:00 pm**; **every second Saturday** from **~1:00 pm**.
+
+### Contact (`/contact`)
+- SMS + form.
 
 ### Services index (`/services`)
 - List of all services with links to detail pages.
@@ -49,7 +57,7 @@ Each page includes: intro, **why choose Lucas**, **what’s included**, optional
 
 ## Key requirements
 - **Mobile-first**
-- **Hyper-local** (10-minute radius from Dendy St)
+- **Hyper-local** (Brighton Central — see `lib/location.ts`)
 - **Brand:** “Apex Assist” throughout
 - **Separate pages** for each service; **biography lives on the home page**
 
