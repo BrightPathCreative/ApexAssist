@@ -1,4 +1,4 @@
-import { CalendarDays, Home } from "lucide-react";
+import { CalendarDays, Circle, Home } from "lucide-react";
 import Link from "next/link";
 import { ContactForm } from "@/components/contact-form";
 import { SMS_E164, SMS_LABEL } from "@/lib/site";
@@ -30,8 +30,14 @@ export default function HomePage() {
         className="border-b border-ink/5 bg-gradient-to-b from-primary to-white px-5 pb-16 pt-14 sm:pb-20 sm:pt-20"
       >
         <div className="mx-auto max-w-3xl text-center">
+          <Circle
+            className="mx-auto mb-3 text-ink/40"
+            size={12}
+            strokeWidth={2.25}
+            aria-hidden
+          />
           <p className="mb-4 text-sm font-medium uppercase tracking-wide text-ink/55">
-            Brighton, Victoria
+            Brighton, VIC
           </p>
           <h1 className="text-balance text-3xl font-semibold leading-tight text-ink sm:text-4xl sm:leading-tight">
             Apex Assist — local help from Lucas
