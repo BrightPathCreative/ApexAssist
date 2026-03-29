@@ -2,7 +2,16 @@
 
 Next.js + Tailwind site for Apex Assist (Brighton Central). Deploy on [Vercel](https://vercel.com).
 
-**Routes:** `/` (home + Lucas bio), `/services` (index), `/services/[slug]` (one page per service — see `lib/services.ts`).
+**Routes:** `/` (home + hub), `/about`, `/services`, `/services/[slug]`, `/pricing`, `/hours`, `/contact` (see `lib/services.ts` for service slugs).
+
+## Workflow: one public site, localhost for drafts
+
+| Where | URL | When |
+|--------|-----|------|
+| **On your PC** | [http://localhost:3000](http://localhost:3000) | After `npm run dev` — check every change **before** you push. |
+| **Public** | Your **custom domain** (e.g. `www.yoursite.com`) | What you share with customers; it should point at **Production** only. |
+
+**Goal:** one Vercel **project**, one **production branch** (`main`), **one domain** on that project. Ignore extra `*.vercel.app` links (branch previews / old deploy ids) for “the main site” — bookmark only your custom domain.
 
 ## Preview on your computer (localhost)
 
@@ -36,11 +45,13 @@ git push -u origin main
 
 Use **GitHub Desktop** instead if you prefer a graphical flow.
 
-## Deploy on Vercel
+## Deploy on Vercel (single production site)
 
 1. Sign in at [vercel.com](https://vercel.com) with GitHub.
-2. **Add New Project** → import your `apex-assist` repository.
-3. Framework: **Next.js** (auto-detected). Root directory: project root. Build command: `next build`, output: default.
-4. Add environment variables from `.env.example` if you use them, then **Deploy**.
+2. **One project only** for this repo (if you see two projects for the same GitHub repo, remove or pause the duplicate so you are not chasing two URLs).
+3. **Add New Project** → import **BrightPathCreative/ApexAssist** (or your fork). Framework: **Next.js** (auto-detected). Deploy.
+4. **Settings → Git → Production Branch** = `main` (default). Every **`git push` to `main`** updates **Production**.
+5. **Settings → Domains** → add your **one** custom domain and follow the DNS steps Vercel shows. That domain is your **public** site; production `*.vercel.app` URLs are fallbacks, not what you need to hand out.
+6. Optional: **Settings → Git** — if you want **no** extra preview sites for other branches, turn off or limit **Preview Deployments** so only `main` gets deploys (team/plan options may vary).
 
-After deploy, Vercel gives you a live URL (e.g. `https://apex-assist-xxx.vercel.app`). Custom domains can be added in the project **Settings → Domains**.
+**Day to day:** edit locally → `npm run dev` on localhost → when happy → `git push` → Vercel rebuilds production → your domain updates.

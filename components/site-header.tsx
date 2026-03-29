@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { ServicesNavDropdown } from "@/components/services-nav-dropdown";
 import { SMS_E164 } from "@/lib/site";
 
 export function SiteHeader() {
@@ -20,9 +21,7 @@ export function SiteHeader() {
           <Link href="/about" className="transition hover:text-ink">
             About
           </Link>
-          <Link href="/services" className="transition hover:text-ink">
-            Services
-          </Link>
+          <ServicesNavDropdown />
           <Link href="/pricing" className="transition hover:text-ink">
             Pricing
           </Link>

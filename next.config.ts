@@ -6,6 +6,15 @@ const nextConfig: NextConfig = {
   eslint: {
     ignoreDuringBuilds: true,
   },
+  async redirects() {
+    return [
+      {
+        source: "/services/pet-house",
+        destination: "/services/dog-walking",
+        permanent: true,
+      },
+    ];
+  },
 };
 
 export default nextConfig;

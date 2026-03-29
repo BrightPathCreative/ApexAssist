@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     default: "Apex Assist — Personal help in Brighton Central",
     template: "%s — Apex Assist",
   },
-  description: `Local help from Lucas: primary tutoring (maths, science, reading), tech support, gardening, pet & house help, and home organisation in ${AREA_LABEL}.`,
+  description: `Local help from Lucas: primary tutoring (maths, science, reading), tech support, gardening, dog walking, and home organisation in ${AREA_LABEL}.`,
 };
 
 export default function RootLayout({

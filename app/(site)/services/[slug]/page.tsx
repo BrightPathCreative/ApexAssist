@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { Star } from "lucide-react";
 import { notFound } from "next/navigation";
 import {
   SERVICE_ORDER,
@@ -46,6 +47,17 @@ export default async function ServicePage({ params }: Props) {
           <span className="mx-2 text-ink/30">/</span>
           <span className="text-ink/70">{s.title}</span>
         </p>
+
+        {s.favoriteCallout ? (
+          <p className="mt-5 flex items-start gap-2.5 rounded-2xl border border-primary-deep/25 bg-primary/70 px-4 py-3.5 text-[15px] leading-relaxed text-ink/85 sm:text-[16px]">
+            <Star
+              className="mt-0.5 h-5 w-5 shrink-0 fill-primary-deep/35 text-primary-deep"
+              strokeWidth={1.75}
+              aria-hidden
+            />
+            <span>{s.favoriteCallout}</span>
+          </p>
+        ) : null}
 
         <h1 className="mt-6 text-3xl font-semibold tracking-tight text-ink sm:text-4xl">
           {s.title}

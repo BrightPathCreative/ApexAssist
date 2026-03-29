@@ -12,7 +12,7 @@ export type ServiceSlug =
   | "tutoring"
   | "tech-help"
   | "gardening"
-  | "pet-house";
+  | "dog-walking";
 
 export type ServiceDefinition = {
   slug: ServiceSlug;
@@ -24,6 +24,8 @@ export type ServiceDefinition = {
   whyMe: string[];
   included: string[];
   note?: string;
+  /** Personal note shown at the top of the detail page (e.g. a favourite service). */
+  favoriteCallout?: string;
 };
 
 export const SERVICE_ORDER: ServiceSlug[] = [
@@ -31,13 +33,15 @@ export const SERVICE_ORDER: ServiceSlug[] = [
   "tutoring",
   "tech-help",
   "gardening",
-  "pet-house",
+  "dog-walking",
 ];
 
 export const servicesBySlug: Record<ServiceSlug, ServiceDefinition> = {
   "home-organisation": {
     slug: "home-organisation",
     title: "Home organisation",
+    favoriteCallout:
+      "I quite enjoy this service — I find something so satisfying about cleaning and making things precisely organised.",
     cardBlurb:
       "Sorting, decluttering, and tidy-ups so your space feels calm again.",
     icon: LayoutList,
@@ -129,29 +133,30 @@ export const servicesBySlug: Record<ServiceSlug, ServiceDefinition> = {
     ],
     note: "Bigger work is fine when we schedule it — I can bring extra people for a weekend push if the job needs it. Anything that needs heavy machinery, regulated trades, or specialist equipment is something I’ll flag honestly so you’re not left wondering.",
   },
-  "pet-house": {
-    slug: "pet-house",
-    title: "Pet & house help",
+  "dog-walking": {
+    slug: "dog-walking",
+    title: "Dog walking",
+    favoriteCallout:
+      "This is my personal favourite service — when I grow up I want to be a vet, and I absolutely love dogs and animals in general.",
     cardBlurb:
-      "Pet check-ins, short walks, mail, plants, and light jobs while you’re away or flat out.",
+      "Short, reliable walks when you’re busy or away — we meet first so your dog is comfortable.",
     icon: PawPrint,
     metaDescription:
-      "Pet care and house help in Brighton Central — feeding, walks, mail, plants, Apex Assist.",
+      "Dog walking in Brighton Central — local walks for dogs, meet-and-greet first, Apex Assist.",
     intro:
-      "When you’re out or stacked with other stuff, pets and plants still need someone to show up. I can drop in for feeding, short walks when that suits the dog, mail and parcels inside, and straightforward house jobs we’ve agreed beforehand.",
+      "When work, school runs, or travel get in the way, dogs still need their walk. I offer straightforward dog walking for dogs that are happy with a new walker after we’ve met — same routes and habits you prefer, leash and harness as you specify.",
     whyMe: [
       "I’m used to juggling school and other commitments, so I take turning up on time and following your instructions seriously.",
-      "I’m gentle with animals and careful with keys, alarms, gates, and the little routines you leave written down.",
-      "I’m easy to reach by text — good for last-minute changes, photos when I’m done, or quick questions.",
+      "I’m gentle with dogs and careful with keys, gates, leashes, harnesses, and any notes you leave about behaviour or no-go zones.",
+      "I’m easy to reach by text — good for last-minute changes, a quick check-in after the walk, or questions.",
     ],
     included: [
-      "Pet feeding and fresh water",
-      "Short walks for dogs that are comfortable with a new walker (we’ll meet first)",
-      "Mail and parcels brought inside",
-      "Watering indoor plants or a small garden patch",
-      "Light house jobs agreed in advance (e.g. bins out, a quick tidy, plants rotated) — text me what you need",
+      "Short walks on a schedule we agree (length and timing to suit your dog)",
+      "Dogs that are comfortable with a new walker after a meet-and-greet first",
+      "Your preferred route, pace, and gear (leash, harness, poo bags as you supply)",
+      "Pick-up and drop-off from your home when that’s what we’ve arranged",
     ],
-    note: "Every pet is different — tell me about temperament, vet contacts, and house rules. If I’m unavailable, I’m working toward a small group of trusted friends to cover extra times, only with your OK.",
+    note: "Every dog is different — tell me about temperament, vet contacts, and walking rules (reactivity, other dogs, traffic). If I’m unavailable, I’m working toward a small group of trusted friends to cover extra times, only with your OK.",
   },
 };
 

@@ -5,7 +5,7 @@ import { pricingTiers } from "@/lib/pricing";
 export const metadata: Metadata = {
   title: "Pricing",
   description:
-    "Straightforward rates for Apex Assist — home help, tutoring & tech, and outdoor work in Brighton.",
+    "Estimated hourly rates for Apex Assist in Brighton — tutoring, tech help, home organisation, dog walking, and gardening.",
 };
 
 export default function PricingPage() {
@@ -22,11 +22,13 @@ export default function PricingPage() {
         <h1 className="mt-4 text-3xl font-semibold tracking-tight text-ink sm:text-4xl">
           Pricing
         </h1>
-        <p className="mt-4 max-w-xl text-[17px] leading-relaxed text-ink/65">
-          Straightforward rates by type of work. I&apos;ll confirm the exact quote when
-          you text — no surprises.
+        <p className="mt-4 max-w-2xl text-[17px] leading-relaxed text-ink/65">
+          The hourly figures below are <strong className="font-medium text-ink/80">estimates only</strong>. I&apos;ll confirm what applies when you text. Actual cost may be higher or lower depending on what&apos;s involved — it&apos;s at my discretion. For example, harder or more complex gardening jobs might be at an increased price; however, easier, quick tech fixes could also be much lower priced.
         </p>
-        <div className="mt-10 space-y-4">
+        <h2 className="mt-10 text-lg font-semibold text-ink">
+          Estimated hourly rates
+        </h2>
+        <div className="mt-4 space-y-4">
           {pricingTiers.map((tier) => (
             <div
               key={tier.name}
@@ -43,8 +45,9 @@ export default function PricingPage() {
           ))}
         </div>
         <p className="mt-8 text-sm leading-relaxed text-ink/55">
-          Final pricing depends on the job. Longer bookings or regular help may be
-          discounted — ask when you get in touch.
+          These rates are meant to be competitive and budget-friendly — strong value for
+          clients while keeping things sustainable on my side. Longer bookings or regular
+          help may be discounted; ask when you get in touch.
         </p>
         <p className="mt-8">
           <Link

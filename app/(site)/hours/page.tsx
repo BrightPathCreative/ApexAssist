@@ -30,7 +30,7 @@ export default function HoursPage() {
             <Home className="mt-0.5 h-5 w-5 shrink-0 text-ink/50" aria-hidden />
             <span>
               <strong className="font-medium text-ink">Thursday</strong> — afternoons,
-              finishing before 6:00&nbsp;pm
+              finishing before 5:30&nbsp;pm
             </span>
           </li>
           <li className="flex gap-3 rounded-xl border border-ink/8 bg-primary/35 px-4 py-3">
@@ -44,6 +44,10 @@ export default function HoursPage() {
             </span>
           </li>
         </ul>
+        <p className="mt-6 text-[17px] leading-relaxed text-ink/70">
+          Public holidays and school breaks can add or remove time slots compared with my
+          usual hours — text me if you&apos;re unsure.
+        </p>
         <p className="mt-6 text-sm text-ink/55">
           Text me for the next Saturday I&apos;m on, or to discuss online tutoring
           times. When I&apos;m booked out, I may suggest a trusted friend for tutoring

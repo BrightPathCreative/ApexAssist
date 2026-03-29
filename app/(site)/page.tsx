@@ -12,12 +12,12 @@ const navLinks = [
   {
     href: "/services",
     title: "Services",
-    description: "Tutoring, tech help, gardening, pets & home, organisation.",
+    description: "Tutoring, tech help, gardening, dog walking, organisation.",
   },
   {
     href: "/pricing",
     title: "Pricing",
-    description: "Straightforward rates — confirmed before we start.",
+    description: "Estimated rates — confirmed before we start.",
   },
   {
     href: "/hours",
@@ -41,7 +41,7 @@ export default function HomePage() {
           </h1>
           <p className="mx-auto mt-5 max-w-xl text-pretty text-[17px] leading-relaxed text-ink/70">
             Practical Life Support for locals: tutoring for primary students, tech help,
-            light gardening, pet and house help, and home organisation. Every section
+            light gardening, dog walking, and home organisation. Every section
             below is its own page — tap through in your own time.
           </p>
           <div className="mt-10 flex justify-center">

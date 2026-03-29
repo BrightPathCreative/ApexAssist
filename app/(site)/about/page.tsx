@@ -32,7 +32,7 @@ export default function AboutPage() {
             <strong className="font-medium text-ink">tutoring</strong>,{" "}
             <strong className="font-medium text-ink">tech help</strong>,{" "}
             <strong className="font-medium text-ink">outdoor and gardening work</strong>,{" "}
-            <strong className="font-medium text-ink">pet and light house help</strong>,
+            <strong className="font-medium text-ink">dog walking</strong>,
             and <strong className="font-medium text-ink">home organisation</strong>.
           </p>
           <p>
@@ -55,7 +55,17 @@ export default function AboutPage() {
             online, depending on what suits.
           </p>
           <p>
-            I also train <strong className="font-medium text-ink">kickboxing</strong>,{" "}
+            I know I&apos;m only in Year 9, but I&apos;m already thinking about where
+            I&apos;d like my studies to lead. I want to take{" "}
+            <strong className="font-medium text-ink">zoological and biological science</strong>{" "}
+            at university, and when I grow up I hope to{" "}
+            <strong className="font-medium text-ink">study and research animals</strong>{" "}
+            — including <strong className="font-medium text-ink">exotic animals</strong>{" "}
+            around the world.
+          </p>
+          <p>
+            Although I&apos;m a nerd, I also love sport — I train{" "}
+            <strong className="font-medium text-ink">kickboxing</strong>,{" "}
             <strong className="font-medium text-ink">tennis</strong>, and{" "}
             <strong className="font-medium text-ink">bouldering</strong> each week. I
             collect <strong className="font-medium text-ink">Pokémon</strong> cards too

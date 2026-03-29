@@ -4,7 +4,7 @@ import { SERVICE_ORDER, servicesBySlug } from "@/lib/services";
 export const metadata = {
   title: "Services",
   description:
-    "Tutoring, tech help, gardening, pet and house help, and home organisation in Brighton Central — Apex Assist.",
+    "Tutoring, tech help, gardening, dog walking, and home organisation in Brighton Central — Apex Assist.",
 };
 
 export default function ServicesIndexPage() {
