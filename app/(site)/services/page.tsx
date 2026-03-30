@@ -34,7 +34,7 @@ export default function ServicesIndexPage() {
               <li key={slug}>
                 <Link
                   href={`/services/${slug}`}
-                  className="flex h-full gap-4 rounded-2xl border border-ink/5 bg-primary/30 p-5 shadow-sm transition hover:border-ink/15 hover:bg-primary/45 dark:border-zinc-700 dark:bg-emerald-800/25 dark:hover:border-zinc-600 dark:hover:bg-emerald-800/40"
+                  className="flex h-full gap-4 rounded-2xl border border-ink bg-primary/30 p-5 shadow-sm transition hover:border-ink hover:bg-primary/45 dark:border-white dark:bg-emerald-800/25 dark:hover:border-white dark:hover:bg-emerald-800/40"
                 >
                   <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-white text-ink shadow-sm dark:bg-zinc-800 dark:text-zinc-100">
                     <Icon className="h-5 w-5" strokeWidth={1.75} aria-hidden />

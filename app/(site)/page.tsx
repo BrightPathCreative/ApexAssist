@@ -35,7 +35,7 @@ export default function HomePage() {
   return (
     <main>
       {/* Light: gradient via Tailwind (avoids very long arbitrary linear() in dev). Dark: smooth stack. */}
-      <section className="border-b border-primary-deep/25 bg-gradient-to-b from-[#B8DCC4] via-[#D4EDDA] to-primary px-5 pb-12 pt-14 sm:pb-16 sm:pt-20 dark:border-emerald-600/50 dark:bg-gradient-to-b dark:from-emerald-700 dark:via-emerald-950/90 dark:to-zinc-950">
+      <section className="border-b border-ink bg-gradient-to-b from-[#B8DCC4] via-[#D4EDDA] to-primary px-5 pb-12 pt-14 sm:pb-16 sm:pt-20 dark:border-white/30 dark:bg-gradient-to-b dark:from-emerald-700 dark:via-emerald-950/90 dark:to-zinc-950">
         <div className="mx-auto max-w-3xl text-center">
           <h1 className="text-balance text-3xl font-semibold leading-tight text-ink dark:text-zinc-100 sm:text-4xl sm:leading-tight">
             Apex Assist — local help from Lucas
@@ -74,7 +74,7 @@ export default function HomePage() {
                 >
                   <Link
                     href={href}
-                    className={`flex min-h-[14.5rem] w-full flex-col items-center justify-center gap-4 rounded-2xl border border-ink/10 bg-white p-6 text-center shadow-sm transition-[transform,box-shadow,border-color] duration-200 hover:scale-[1.02] hover:border-ink hover:shadow-md active:scale-[0.99] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ink focus-visible:ring-offset-2 dark:border-zinc-700 dark:bg-zinc-900 dark:hover:border-zinc-500 dark:focus-visible:ring-zinc-400 dark:focus-visible:ring-offset-zinc-950 sm:min-h-[15.5rem] ${
+                    className={`flex min-h-[14.5rem] w-full flex-col items-center justify-center gap-4 rounded-2xl border border-ink bg-white p-6 text-center shadow-sm transition-[transform,box-shadow,border-color] duration-200 hover:scale-[1.02] hover:border-ink hover:shadow-md active:scale-[0.99] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ink focus-visible:ring-offset-2 dark:border-white dark:bg-zinc-900 dark:hover:border-white dark:focus-visible:ring-zinc-400 dark:focus-visible:ring-offset-zinc-950 sm:min-h-[15.5rem] ${
                       isLast ? "sm:max-w-[calc(50%-0.375rem)]" : ""
                     }`}
                   >

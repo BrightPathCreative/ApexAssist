@@ -32,7 +32,7 @@ export default function PricingPage() {
           {pricingTiers.map((tier) => (
             <div
               key={tier.name}
-              className="flex flex-col justify-between gap-3 rounded-2xl border border-ink/8 bg-white px-5 py-5 dark:border-zinc-700 dark:bg-zinc-900 sm:flex-row sm:items-center"
+              className="flex flex-col justify-between gap-3 rounded-2xl border border-ink bg-white px-5 py-5 dark:border-white dark:bg-zinc-900 sm:flex-row sm:items-center"
             >
               <div>
                 <h2 className="font-medium text-ink dark:text-zinc-100">{tier.name}</h2>

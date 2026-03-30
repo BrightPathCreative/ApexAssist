@@ -49,7 +49,7 @@ export default async function ServicePage({ params }: Props) {
         </p>
 
         {s.favoriteCallout ? (
-          <p className="mt-5 flex items-start gap-2.5 rounded-2xl border border-primary-deep/25 bg-primary/70 px-4 py-3.5 text-[15px] leading-relaxed text-ink/85 dark:border-emerald-600/45 dark:bg-emerald-800/45 dark:text-zinc-200 sm:text-[16px]">
+          <p className="mt-5 flex items-start gap-2.5 rounded-2xl border border-ink bg-primary/70 px-4 py-3.5 text-[15px] leading-relaxed text-ink/85 dark:border-white dark:bg-emerald-800/45 dark:text-zinc-200 sm:text-[16px]">
             <Star
               className="mt-0.5 h-5 w-5 shrink-0 fill-primary-deep/35 text-primary-deep dark:fill-emerald-700/50 dark:text-emerald-500"
               strokeWidth={1.75}
@@ -83,12 +83,12 @@ export default async function ServicePage({ params }: Props) {
         </ul>
 
         {s.note ? (
-          <p className="mt-10 rounded-2xl border border-ink/10 bg-primary/40 px-5 py-4 text-[15px] leading-relaxed text-ink/75 dark:border-zinc-700 dark:bg-emerald-800/35 dark:text-zinc-400">
+          <p className="mt-10 rounded-2xl border border-ink bg-primary/40 px-5 py-4 text-[15px] leading-relaxed text-ink/75 dark:border-white dark:bg-emerald-800/35 dark:text-zinc-400">
             {s.note}
           </p>
         ) : null}
 
-        <div className="mt-14 flex flex-col gap-4 border-t border-ink/10 pt-10 dark:border-zinc-800 sm:flex-row sm:items-center sm:justify-between">
+        <div className="mt-14 flex flex-col gap-4 border-t border-ink pt-10 dark:border-white/30 sm:flex-row sm:items-center sm:justify-between">
           <Link
             href="/contact"
             className="inline-flex items-center justify-center rounded-xl bg-ink px-6 py-3.5 text-[15px] font-medium text-white transition hover:bg-ink/90 dark:bg-zinc-100 dark:text-zinc-950 dark:hover:bg-white"
@@ -104,7 +104,7 @@ export default async function ServicePage({ params }: Props) {
         </div>
 
         <nav
-          className="mt-10 flex flex-col gap-3 border-t border-ink/10 pt-10 text-sm dark:border-zinc-800 sm:flex-row sm:justify-between"
+          className="mt-10 flex flex-col gap-3 border-t border-ink pt-10 text-sm dark:border-white/30 sm:flex-row sm:justify-between"
           aria-label="Other services"
         >
           {prev ? (

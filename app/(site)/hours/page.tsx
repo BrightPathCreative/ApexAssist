@@ -26,14 +26,14 @@ export default function HoursPage() {
           I fit Apex Assist around school and training. Regular hours are:
         </p>
         <ul className="mt-6 space-y-4 text-[17px] leading-relaxed text-ink/80 dark:text-zinc-300">
-          <li className="flex gap-3 rounded-xl border border-ink/8 bg-primary/35 px-4 py-3 dark:border-zinc-700 dark:bg-emerald-800/30">
+          <li className="flex gap-3 rounded-xl border border-ink bg-primary/35 px-4 py-3 dark:border-white dark:bg-emerald-800/30">
             <Home className="mt-0.5 h-5 w-5 shrink-0 text-ink/50 dark:text-zinc-500" aria-hidden />
             <span>
               <strong className="font-medium text-ink dark:text-zinc-100">Thursday</strong> — afternoons,
               finishing before 5:30&nbsp;pm
             </span>
           </li>
-          <li className="flex gap-3 rounded-xl border border-ink/8 bg-primary/35 px-4 py-3 dark:border-zinc-700 dark:bg-emerald-800/30">
+          <li className="flex gap-3 rounded-xl border border-ink bg-primary/35 px-4 py-3 dark:border-white dark:bg-emerald-800/30">
             <CalendarDays
               className="mt-0.5 h-5 w-5 shrink-0 text-ink/50 dark:text-zinc-500"
               aria-hidden

@@ -48,7 +48,7 @@ export function ThemeToggle() {
       onClick={toggle}
       aria-label={dark ? "Switch to light mode" : "Switch to dark mode"}
       aria-pressed={dark}
-      className="relative z-10 inline-flex h-9 w-9 shrink-0 cursor-pointer items-center justify-center rounded-full border border-ink/15 bg-white/80 text-ink transition hover:bg-primary/50 hover:border-ink/25 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ink focus-visible:ring-offset-2 dark:border-zinc-600 dark:bg-zinc-800/80 dark:text-zinc-100 dark:hover:border-zinc-500 dark:hover:bg-zinc-700/80 dark:focus-visible:ring-zinc-300 dark:focus-visible:ring-offset-zinc-950"
+      className="relative z-10 inline-flex h-9 w-9 shrink-0 cursor-pointer items-center justify-center rounded-full border border-ink bg-white/80 text-ink transition hover:bg-primary/50 hover:border-ink focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ink focus-visible:ring-offset-2 dark:border-white dark:bg-zinc-800/80 dark:text-zinc-100 dark:hover:border-white dark:hover:bg-zinc-700/80 dark:focus-visible:ring-zinc-300 dark:focus-visible:ring-offset-zinc-950"
     >
       {mounted ? (
         dark ? (

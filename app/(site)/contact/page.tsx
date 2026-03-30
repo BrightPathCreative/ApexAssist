@@ -27,7 +27,7 @@ export default function ContactPage() {
           The fastest way to reach me is a text. You can also use the form — it lines
           up your details, then you tap once to open your texting app and send.
         </p>
-        <div className="mt-8 rounded-2xl bg-primary/50 p-6 dark:bg-emerald-800/35 sm:p-8">
+        <div className="mt-8 rounded-2xl border border-ink bg-primary/50 p-6 dark:border-white dark:bg-emerald-800/35 sm:p-8">
           <p className="mb-6 text-center">
             <a
               href={`sms:${SMS_E164}`}

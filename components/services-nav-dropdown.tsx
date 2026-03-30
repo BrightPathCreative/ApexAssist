@@ -52,7 +52,7 @@ export function ServicesNavDropdown() {
           id={menuId}
           role="menu"
           aria-orientation="vertical"
-          className="absolute left-0 top-full z-30 mt-2 min-w-[min(100vw-2.5rem,16rem)] max-w-[calc(100vw-2.5rem)] rounded-xl border border-ink/10 bg-white py-2 shadow-lg dark:border-zinc-700 dark:bg-zinc-900 sm:min-w-[15rem]"
+          className="absolute left-0 top-full z-30 mt-2 min-w-[min(100vw-2.5rem,16rem)] max-w-[calc(100vw-2.5rem)] rounded-xl border border-ink bg-white py-2 shadow-lg dark:border-white dark:bg-zinc-900 sm:min-w-[15rem]"
         >
           <Link
             href="/services"
@@ -62,7 +62,7 @@ export function ServicesNavDropdown() {
           >
             All services
           </Link>
-          <div className="my-1 border-t border-ink/8 dark:border-zinc-700" aria-hidden />
+          <div className="my-1 border-t border-ink dark:border-white/40" aria-hidden />
           {SERVICE_ORDER.map((slug) => (
             <Link
               key={slug}
