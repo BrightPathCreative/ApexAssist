@@ -16,6 +16,9 @@ export const metadata: Metadata = {
     template: "%s — Apex Assist",
   },
   description: `Local help from Lucas: primary tutoring (maths, science, reading), tech support, gardening, dog walking, and home organisation in ${AREA_LABEL}.`,
+  icons: {
+    icon: "/logo.png",
+  },
 };
 
 export default function RootLayout({

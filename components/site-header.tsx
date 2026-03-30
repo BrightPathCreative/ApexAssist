@@ -1,6 +1,9 @@
+import Image from "next/image";
 import Link from "next/link";
 import { ServicesNavDropdown } from "@/components/services-nav-dropdown";
 import { ThemeToggle } from "@/components/theme-toggle";
+
+const LOGO_SRC = "/logo.png";
 
 export function SiteHeader() {
   return (
@@ -8,8 +11,17 @@ export function SiteHeader() {
       <div className="mx-auto flex max-w-3xl flex-wrap items-center justify-between gap-3 px-5 py-4">
         <Link
           href="/"
-          className="min-w-0 max-w-[min(100%,16rem)] sm:max-w-xs"
+          className="flex min-w-0 max-w-[min(100%,18rem)] items-center gap-2.5 sm:max-w-xs"
         >
+          <Image
+            src={LOGO_SRC}
+            alt=""
+            width={40}
+            height={40}
+            className="h-9 w-9 shrink-0 object-contain dark:brightness-0 dark:invert"
+            priority
+            unoptimized
+          />
           <span className="block text-lg font-semibold leading-tight tracking-tight text-ink dark:text-zinc-100">
             Apex Assist
           </span>
