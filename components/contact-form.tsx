@@ -1,13 +1,14 @@
 "use client";
 
 import { useState } from "react";
-import { SMS_E164 } from "@/lib/site";
+import { SMS_E164, SMS_LABEL } from "@/lib/site";
 
 export function ContactForm() {
   const [name, setName] = useState("");
   const [phone, setPhone] = useState("");
   const [message, setMessage] = useState("");
   const [sent, setSent] = useState(false);
+  const [smsUrl, setSmsUrl] = useState<string | null>(null);
 
   function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
@@ -19,16 +20,31 @@ export function ContactForm() {
       .filter(Boolean)
       .join("\n");
     const url = `sms:${SMS_E164}${body ? `?body=${encodeURIComponent(body)}` : ""}`;
-    window.location.href = url;
+    setSmsUrl(url);
     setSent(true);
   }
 
-  if (sent) {
+  if (sent && smsUrl) {
     return (
-      <p className="rounded-xl bg-primary px-5 py-4 text-center text-[15px] leading-relaxed text-ink">
-        If your device did not open Messages, text the number above with your
-        details. I will get back to you as soon as I can.
-      </p>
+      <div
+        className="flex flex-col gap-4"
+        role="status"
+        aria-live="polite"
+      >
+        <p className="rounded-xl border border-primary-deep/25 bg-primary/80 px-5 py-4 text-center text-[15px] leading-relaxed text-ink">
+          <strong className="font-medium text-ink">Your message is ready.</strong> Tap{" "}
+          <span className="whitespace-nowrap">“Open text message”</span> below to send
+          it from your phone. If your device doesn&apos;t open Messages, text{" "}
+          <strong className="font-medium text-ink">{SMS_LABEL}</strong> with the same
+          details. I&apos;ll get back to you as soon as I can.
+        </p>
+        <a
+          href={smsUrl}
+          className="inline-flex w-full items-center justify-center rounded-xl bg-ink px-6 py-3.5 text-center text-[15px] font-medium text-white transition hover:bg-ink/90 active:scale-[0.99]"
+        >
+          Open text message
+        </a>
+      </div>
     );
   }
 
@@ -83,7 +99,7 @@ export function ContactForm() {
         type="submit"
         className="mt-1 rounded-xl bg-ink px-6 py-3.5 text-[15px] font-medium text-white transition hover:bg-ink/90 active:scale-[0.99]"
       >
-        Open text message
+        Prepare text message
       </button>
     </form>
   );

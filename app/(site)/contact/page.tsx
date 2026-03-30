@@ -24,8 +24,8 @@ export default function ContactPage() {
           Contact
         </h1>
         <p className="mt-4 text-[17px] leading-relaxed text-ink/70">
-          The fastest way to reach me is a text. You can also use the form — it opens
-          a message with your details ready to send.
+          The fastest way to reach me is a text. You can also use the form — it lines
+          up your details, then you tap once to open your texting app and send.
         </p>
         <div className="mt-8 rounded-2xl bg-primary/50 p-6 sm:p-8">
           <p className="mb-6 text-center">

@@ -1,6 +1,5 @@
 import Link from "next/link";
 import { ServicesNavDropdown } from "@/components/services-nav-dropdown";
-import { SMS_E164 } from "@/lib/site";
 
 export function SiteHeader() {
   return (
@@ -28,16 +27,13 @@ export function SiteHeader() {
           <Link href="/hours" className="transition hover:text-ink">
             Hours
           </Link>
-          <Link href="/contact" className="transition hover:text-ink">
-            Contact
-          </Link>
         </nav>
-        <a
-          href={`sms:${SMS_E164}`}
-          className="rounded-full bg-primary px-4 py-2 text-sm font-medium text-ink transition hover:bg-primary-deep/30"
+        <Link
+          href="/contact"
+          className="rounded-full border border-primary-deep/50 bg-white px-4 py-2 text-sm font-medium text-ink shadow-sm transition hover:border-primary-deep hover:bg-primary/40"
         >
           Text me
-        </a>
+        </Link>
       </div>
     </header>
   );
