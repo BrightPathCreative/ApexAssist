@@ -34,8 +34,10 @@ const navLinks = [
 export default function HomePage() {
   return (
     <main>
-      {/* Light: gradient via Tailwind (avoids very long arbitrary linear() in dev). Dark: smooth stack. */}
-      <section className="border-b border-ink bg-gradient-to-b from-[#B8DCC4] via-[#D4EDDA] to-primary px-5 pb-12 pt-14 sm:pb-16 sm:pt-20 dark:border-white/30 dark:bg-gradient-to-b dark:from-emerald-700 dark:via-emerald-950/90 dark:to-zinc-950">
+      {/* Hero: long fades — light (mint → primary) mirrors dark (emerald → zinc-950). */}
+      <section
+        className="border-b-2 border-emerald-800/35 px-5 pb-12 pt-14 sm:pb-16 sm:pt-20 dark:border-primary/40 bg-gradient-to-b from-[#A8C9B6] from-0% via-[#C8E4D4] via-[42%] to-primary to-100% dark:from-emerald-700 dark:from-0% dark:via-emerald-900/95 dark:via-[48%] dark:to-zinc-950 dark:to-100%"
+      >
         <div className="mx-auto max-w-3xl text-center">
           <h1 className="text-balance text-3xl font-semibold leading-tight text-ink dark:text-zinc-100 sm:text-4xl sm:leading-tight">
             Apex Assist — local help from Lucas
@@ -48,7 +50,7 @@ export default function HomePage() {
           <div className="mt-10 flex justify-center">
             <a
               href={`sms:${SMS_E164}`}
-              className="inline-flex w-full max-w-xs items-center justify-center rounded-xl bg-ink px-8 py-4 text-[17px] font-medium text-white shadow-sm transition hover:bg-ink/90 active:scale-[0.99] dark:bg-zinc-100 dark:text-zinc-950 dark:hover:bg-white sm:w-auto"
+              className="inline-flex w-full max-w-xs items-center justify-center rounded-xl border-2 border-white/35 bg-ink px-8 py-4 text-[17px] font-medium text-white shadow-sm transition hover:bg-ink/90 active:scale-[0.99] dark:border-primary dark:bg-zinc-100 dark:text-zinc-950 dark:hover:bg-white sm:w-auto"
             >
               Text me
             </a>
@@ -74,7 +76,7 @@ export default function HomePage() {
                 >
                   <Link
                     href={href}
-                    className={`flex min-h-[14.5rem] w-full flex-col items-center justify-center gap-4 rounded-2xl border border-ink bg-white p-6 text-center shadow-sm transition-[transform,box-shadow,border-color] duration-200 hover:scale-[1.02] hover:border-ink hover:shadow-md active:scale-[0.99] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ink focus-visible:ring-offset-2 dark:border-white dark:bg-zinc-900 dark:hover:border-white dark:focus-visible:ring-zinc-400 dark:focus-visible:ring-offset-zinc-950 sm:min-h-[15.5rem] ${
+                    className={`flex min-h-[14.5rem] w-full flex-col items-center justify-center gap-4 rounded-2xl border-2 border-emerald-800 bg-white p-6 text-center shadow-sm transition-[transform,box-shadow,border-color] duration-200 hover:scale-[1.02] hover:border-emerald-950 hover:shadow-md active:scale-[0.99] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-800 focus-visible:ring-offset-2 dark:border-primary dark:bg-zinc-900 dark:hover:border-primary-muted dark:focus-visible:ring-primary dark:focus-visible:ring-offset-zinc-950 sm:min-h-[15.5rem] ${
                       isLast ? "sm:max-w-[calc(50%-0.375rem)]" : ""
                     }`}
                   >

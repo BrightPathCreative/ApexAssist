@@ -3,7 +3,7 @@ import { SERVICE_RADIUS_LINE } from "@/lib/location";
 
 export function SiteFooter() {
   return (
-    <footer className="border-t border-ink bg-primary px-5 py-10 transition-colors dark:border-white/30 dark:bg-zinc-900">
+    <footer className="border-t-2 border-emerald-800/45 bg-primary px-5 py-10 transition-colors dark:border-primary/40 dark:bg-zinc-900">
       <div className="mx-auto max-w-3xl text-center">
         <p className="font-medium text-ink dark:text-zinc-100">Apex Assist</p>
         <p className="mt-2 text-sm text-ink/55 dark:text-zinc-400">

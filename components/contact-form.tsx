@@ -31,7 +31,7 @@ export function ContactForm() {
         role="status"
         aria-live="polite"
       >
-        <p className="rounded-xl border border-ink bg-primary/80 px-5 py-4 text-center text-[15px] leading-relaxed text-ink dark:border-white dark:bg-emerald-800/45 dark:text-zinc-200">
+        <p className="rounded-xl border-2 border-emerald-800 bg-primary/80 px-5 py-4 text-center text-[15px] leading-relaxed text-ink dark:border-primary dark:bg-emerald-800/45 dark:text-zinc-200">
           <strong className="font-medium text-ink dark:text-zinc-100">Your message is ready.</strong> Tap{" "}
           <span className="whitespace-nowrap">“Open text message”</span> below to send
           it from your phone. If your device doesn&apos;t open Messages, text{" "}
@@ -61,7 +61,7 @@ export function ContactForm() {
           autoComplete="name"
           value={name}
           onChange={(e) => setName(e.target.value)}
-          className="w-full rounded-xl border border-ink bg-white px-4 py-3 text-ink outline-none ring-ink/20 transition focus:ring-2 dark:border-white dark:bg-zinc-900 dark:text-zinc-100 dark:ring-zinc-600"
+          className="w-full rounded-xl border-2 border-emerald-800 bg-white px-4 py-3 text-ink outline-none ring-emerald-800/25 transition focus:ring-2 dark:border-primary dark:bg-zinc-900 dark:text-zinc-100 dark:ring-primary/40"
           placeholder="Your name"
         />
       </div>
@@ -77,7 +77,7 @@ export function ContactForm() {
           inputMode="tel"
           value={phone}
           onChange={(e) => setPhone(e.target.value)}
-          className="w-full rounded-xl border border-ink bg-white px-4 py-3 text-ink outline-none ring-ink/20 transition focus:ring-2 dark:border-white dark:bg-zinc-900 dark:text-zinc-100 dark:ring-zinc-600"
+          className="w-full rounded-xl border-2 border-emerald-800 bg-white px-4 py-3 text-ink outline-none ring-emerald-800/25 transition focus:ring-2 dark:border-primary dark:bg-zinc-900 dark:text-zinc-100 dark:ring-primary/40"
           placeholder="So I can text you back"
         />
       </div>
@@ -91,7 +91,7 @@ export function ContactForm() {
           rows={4}
           value={message}
           onChange={(e) => setMessage(e.target.value)}
-          className="w-full resize-y rounded-xl border border-ink bg-white px-4 py-3 text-ink outline-none ring-ink/20 transition focus:ring-2 dark:border-white dark:bg-zinc-900 dark:text-zinc-100 dark:ring-zinc-600"
+          className="w-full resize-y rounded-xl border-2 border-emerald-800 bg-white px-4 py-3 text-ink outline-none ring-emerald-800/25 transition focus:ring-2 dark:border-primary dark:bg-zinc-900 dark:text-zinc-100 dark:ring-primary/40"
           placeholder="What you need help with, and preferred times"
         />
       </div>
