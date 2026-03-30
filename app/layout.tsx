@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Outfit } from "next/font/google";
+import Script from "next/script";
 import { AREA_LABEL } from "@/lib/location";
 import "./globals.css";
 
@@ -23,8 +24,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en-AU" className={outfit.variable}>
-      <body className="font-sans">{children}</body>
+    <html lang="en-AU" className={outfit.variable} suppressHydrationWarning>
+      <body className="font-sans" suppressHydrationWarning>
+        <Script id="apex-theme-init" strategy="beforeInteractive">
+          {`(function(){try{var t=localStorage.getItem("apex-assist-theme");if(t==="dark")document.documentElement.classList.add("dark")}catch(e){}})()`}
+        </Script>
+        {children}
+      </body>
     </html>
   );
 }

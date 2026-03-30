@@ -1,4 +1,4 @@
-import type { LucideIcon } from "lucide-react";
+import type { ComponentType, SVGProps } from "react";
 import {
   BookOpen,
   Laptop,
@@ -18,7 +18,7 @@ export type ServiceDefinition = {
   slug: ServiceSlug;
   title: string;
   cardBlurb: string;
-  icon: LucideIcon;
+  icon: ComponentType<SVGProps<SVGSVGElement>>;
   metaDescription: string;
   intro: string;
   whyMe: string[];

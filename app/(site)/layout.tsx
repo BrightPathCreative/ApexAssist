@@ -7,7 +7,7 @@ export default function SiteLayout({
   children: React.ReactNode;
 }) {
   return (
-    <div className="min-h-screen bg-primary">
+    <div className="min-h-screen bg-primary transition-colors duration-200 dark:bg-zinc-950">
       <SiteHeader />
       {children}
       <SiteFooter />

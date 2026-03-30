@@ -35,7 +35,7 @@ export function ServicesNavDropdown() {
     <div ref={containerRef} className="relative">
       <button
         type="button"
-        className="inline-flex items-center gap-0.5 rounded-md text-sm font-medium text-ink/75 transition hover:text-ink focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ink focus-visible:ring-offset-2"
+        className="inline-flex items-center gap-0.5 rounded-md text-sm font-medium text-ink/75 transition hover:text-ink focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ink focus-visible:ring-offset-2 dark:text-zinc-400 dark:hover:text-zinc-100 dark:focus-visible:ring-zinc-300 dark:focus-visible:ring-offset-zinc-950"
         aria-expanded={open}
         aria-haspopup="true"
         aria-controls={menuId}
@@ -52,23 +52,23 @@ export function ServicesNavDropdown() {
           id={menuId}
           role="menu"
           aria-orientation="vertical"
-          className="absolute left-0 top-full z-30 mt-2 min-w-[min(100vw-2.5rem,16rem)] max-w-[calc(100vw-2.5rem)] rounded-xl border border-ink/10 bg-white py-2 shadow-lg sm:min-w-[15rem]"
+          className="absolute left-0 top-full z-30 mt-2 min-w-[min(100vw-2.5rem,16rem)] max-w-[calc(100vw-2.5rem)] rounded-xl border border-ink/10 bg-white py-2 shadow-lg dark:border-zinc-700 dark:bg-zinc-900 sm:min-w-[15rem]"
         >
           <Link
             href="/services"
             role="menuitem"
-            className="block px-4 py-2.5 text-sm text-ink/75 transition hover:bg-primary/50 hover:text-ink"
+            className="block px-4 py-2.5 text-sm text-ink/75 transition hover:bg-primary/50 hover:text-ink dark:text-zinc-400 dark:hover:bg-emerald-800/45 dark:hover:text-zinc-100"
             onClick={() => setOpen(false)}
           >
             All services
           </Link>
-          <div className="my-1 border-t border-ink/8" aria-hidden />
+          <div className="my-1 border-t border-ink/8 dark:border-zinc-700" aria-hidden />
           {SERVICE_ORDER.map((slug) => (
             <Link
               key={slug}
               href={`/services/${slug}`}
               role="menuitem"
-              className="block px-4 py-2.5 text-sm text-ink/75 transition hover:bg-primary/50 hover:text-ink"
+              className="block px-4 py-2.5 text-sm text-ink/75 transition hover:bg-primary/50 hover:text-ink dark:text-zinc-400 dark:hover:bg-emerald-800/45 dark:hover:text-zinc-100"
               onClick={() => setOpen(false)}
             >
               {servicesBySlug[slug].title}

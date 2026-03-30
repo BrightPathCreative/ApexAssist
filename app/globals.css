@@ -6,7 +6,8 @@
   html {
     scroll-behavior: smooth;
   }
+  /* Keep light + dark on one rule — nested `.dark body { @apply }` can break the CSS build in some setups. */
   body {
-    @apply bg-primary text-ink antialiased;
+    @apply bg-primary text-ink antialiased transition-colors duration-200 dark:bg-zinc-950 dark:text-zinc-100;
   }
 }
