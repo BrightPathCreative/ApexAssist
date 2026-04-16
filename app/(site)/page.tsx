@@ -1,6 +1,6 @@
 import { ChevronRight } from "lucide-react";
 import Link from "next/link";
-import { AREA_LABEL, SERVICE_RADIUS_LINE } from "@/lib/location";
+import { AREA_LABEL } from "@/lib/location";
 import { SMS_E164 } from "@/lib/site";
 
 const navLinks = [
@@ -55,7 +55,6 @@ export default function HomePage() {
               Text me
             </a>
           </div>
-          <p className="mt-6 text-sm text-ink/50 dark:text-zinc-500">{SERVICE_RADIUS_LINE}</p>
         </div>
       </section>
 
