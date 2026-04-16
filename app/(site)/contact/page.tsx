@@ -6,7 +6,7 @@ import { SMS_E164, SMS_LABEL } from "@/lib/site";
 export const metadata: Metadata = {
   title: "Contact",
   description:
-    "Contact Apex Assist — text Lucas for local help in Brighton Central, or send a message.",
+    "Contact Apex Assist: text Lucas for local help in Brighton Central, or send a message.",
 };
 
 export default function ContactPage() {
@@ -24,7 +24,7 @@ export default function ContactPage() {
           Contact
         </h1>
         <p className="mt-4 text-[17px] leading-relaxed text-ink/70 dark:text-zinc-400">
-          The fastest way to reach me is a text. You can also use the form — it lines
+          The fastest way to reach me is a text. You can also use the form, which lines
           up your details, then you tap once to open your texting app and send.
         </p>
         <div className="mt-8 rounded-2xl border-2 border-emerald-800 bg-primary/50 p-6 dark:border-primary dark:bg-emerald-800/35 sm:p-8">

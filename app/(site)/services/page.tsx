@@ -4,7 +4,7 @@ import { SERVICE_ORDER, servicesBySlug } from "@/lib/services";
 export const metadata = {
   title: "Services",
   description:
-    "Tutoring, tech help, gardening, dog walking, and home organisation in Brighton Central — Apex Assist.",
+    "Tutoring, tech help, gardening, dog walking, and home organisation in Brighton Central from Apex Assist.",
 };
 
 export default function ServicesIndexPage() {
@@ -22,7 +22,7 @@ export default function ServicesIndexPage() {
           Services
         </h1>
         <p className="mt-4 max-w-2xl text-[17px] leading-relaxed text-ink/70 dark:text-zinc-400">
-          Each service has its own page — benefits, what&apos;s included, and how I
+          Each service has its own page with benefits, what&apos;s included, and how I
           work. Start with whatever fits your week.
         </p>
 

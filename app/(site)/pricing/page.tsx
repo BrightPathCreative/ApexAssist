@@ -5,7 +5,7 @@ import { pricingTiers } from "@/lib/pricing";
 export const metadata: Metadata = {
   title: "Pricing",
   description:
-    "Estimated hourly rates for Apex Assist in Brighton — tutoring, tech help, home organisation, dog walking, and gardening.",
+    "Estimated hourly rates for Apex Assist in Brighton: tutoring, tech help, home organisation, dog walking, and gardening.",
 };
 
 export default function PricingPage() {
@@ -23,7 +23,7 @@ export default function PricingPage() {
           Pricing
         </h1>
         <p className="mt-4 max-w-2xl text-[17px] leading-relaxed text-ink/65 dark:text-zinc-400">
-          The hourly figures below are <strong className="font-medium text-ink/80 dark:text-zinc-200">estimates only</strong>. I&apos;ll confirm what applies when you text. Actual cost may be higher or lower depending on what&apos;s involved — it&apos;s at my discretion. For example, harder or more complex gardening jobs might be at an increased price; however, easier, quick tech fixes could also be much lower priced.
+          The hourly figures below are <strong className="font-medium text-ink/80 dark:text-zinc-200">estimates only</strong>. I&apos;ll confirm what applies when you text. Actual cost may be higher or lower depending on what&apos;s involved, and it&apos;s at my discretion. For example, harder or more complex gardening jobs might be at an increased price; however, easier, quick tech fixes could also be much lower priced.
         </p>
         <h2 className="mt-10 text-lg font-semibold text-ink dark:text-zinc-100">
           Estimated hourly rates
@@ -45,7 +45,7 @@ export default function PricingPage() {
           ))}
         </div>
         <p className="mt-8 text-sm leading-relaxed text-ink/55 dark:text-zinc-500">
-          These rates are meant to be competitive and budget-friendly — strong value for
+          These rates are meant to be competitive and budget-friendly, with strong value for
           clients while keeping things sustainable on my side. Longer bookings or regular
           help may be discounted; ask when you get in touch.
         </p>

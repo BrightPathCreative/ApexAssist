@@ -7,7 +7,7 @@ export const pricingTiers = [
   },
   {
     name: "Tutoring",
-    detail: "Primary maths, science & reading; Year 7–8 maths",
+    detail: "Primary maths, science & reading; Year 7 and 8 maths",
     price: "$35 / hr",
   },
   {
@@ -22,7 +22,7 @@ export const pricingTiers = [
   },
   {
     name: "Dog walking",
-    detail: "Scheduled walks — meet-and-greet first",
+    detail: "Scheduled walks, meet-and-greet first",
     price: "$20 / hr",
   },
 ] as const;

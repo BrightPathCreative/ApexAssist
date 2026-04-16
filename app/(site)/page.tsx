@@ -17,7 +17,7 @@ const navLinks = [
   {
     href: "/pricing",
     title: "Pricing",
-    description: "Estimated rates — confirmed before we start.",
+    description: "Estimated rates, confirmed before we start.",
   },
   {
     href: "/hours",
@@ -34,18 +34,18 @@ const navLinks = [
 export default function HomePage() {
   return (
     <main>
-      {/* Hero: long fades — light (mint → primary) mirrors dark (emerald → zinc-950). */}
+      {/* Hero: long fades; light (mint to primary) mirrors dark (emerald to zinc-950). */}
       <section
         className="border-b-2 border-emerald-800/35 px-5 pb-12 pt-14 sm:pb-16 sm:pt-20 dark:border-primary/40 bg-gradient-to-b from-[#A8C9B6] from-0% via-[#C8E4D4] via-[42%] to-primary to-100% dark:from-emerald-700 dark:from-0% dark:via-emerald-900/95 dark:via-[48%] dark:to-zinc-950 dark:to-100%"
       >
         <div className="mx-auto max-w-3xl text-center">
           <h1 className="text-balance text-3xl font-semibold leading-tight text-ink dark:text-zinc-100 sm:text-4xl sm:leading-tight">
-            Apex Assist — local help from Lucas
+            Apex Assist: local help from Lucas
           </h1>
           <p className="mx-auto mt-5 max-w-xl text-pretty text-[17px] leading-relaxed text-ink/70 dark:text-zinc-400">
             Practical Life Support for locals: tutoring for primary students, tech help,
             light gardening, dog walking, and home organisation. Every section
-            below is its own page — tap through in your own time.
+            below is its own page, so tap through in your own time.
           </p>
           <div className="mt-10 flex justify-center">
             <a

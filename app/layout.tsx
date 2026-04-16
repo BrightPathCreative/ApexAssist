@@ -12,8 +12,8 @@ const outfit = Outfit({
 
 export const metadata: Metadata = {
   title: {
-    default: "Apex Assist — Personal help in Brighton Central",
-    template: "%s — Apex Assist",
+    default: "Apex Assist: personal help in Brighton Central",
+    template: "%s | Apex Assist",
   },
   description: `Local help from Lucas: primary tutoring (maths, science, reading), tech support, gardening, dog walking, and home organisation in ${AREA_LABEL}.`,
   icons: {

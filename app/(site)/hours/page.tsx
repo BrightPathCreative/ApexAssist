@@ -5,7 +5,7 @@ import { CalendarDays, Home } from "lucide-react";
 export const metadata: Metadata = {
   title: "Hours & availability",
   description:
-    "When Apex Assist is available — Thursday afternoons and alternate Saturdays, Brighton Central.",
+    "When Apex Assist is available: Thursday afternoons and alternate Saturdays, Brighton Central.",
 };
 
 export default function HoursPage() {
@@ -29,7 +29,7 @@ export default function HoursPage() {
           <li className="flex gap-3 rounded-xl border-2 border-emerald-800 bg-primary/35 px-4 py-3 dark:border-primary dark:bg-emerald-800/30">
             <Home className="mt-0.5 h-5 w-5 shrink-0 text-ink/50 dark:text-zinc-500" aria-hidden />
             <span>
-              <strong className="font-medium text-ink dark:text-zinc-100">Thursday</strong> — afternoons,
+              <strong className="font-medium text-ink dark:text-zinc-100">Thursday</strong> afternoons,
               finishing before 5:30&nbsp;pm
             </span>
           </li>
@@ -39,19 +39,19 @@ export default function HoursPage() {
               aria-hidden
             />
             <span>
-              <strong className="font-medium text-ink dark:text-zinc-100">Every second Saturday</strong>{" "}
-              — from about 1:00&nbsp;pm (afternoons)
+              <strong className="font-medium text-ink dark:text-zinc-100">Every second Saturday</strong>, from
+              about 1:00&nbsp;pm (afternoons)
             </span>
           </li>
         </ul>
         <p className="mt-6 text-[17px] leading-relaxed text-ink/70 dark:text-zinc-400">
           Public holidays and school breaks can add or remove time slots compared with my
-          usual hours — text me if you&apos;re unsure.
+          usual hours, so text me if you&apos;re unsure.
         </p>
         <p className="mt-6 text-sm text-ink/55 dark:text-zinc-500">
           Text me for the next Saturday I&apos;m on, or to discuss online tutoring
           times. When I&apos;m booked out, I may suggest a trusted friend for tutoring
-          or hands-on help — only if you&apos;re comfortable with that.
+          or hands-on help, only if you&apos;re comfortable with that.
         </p>
         <p className="mt-8">
           <Link

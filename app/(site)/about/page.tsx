@@ -4,7 +4,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "About Lucas",
   description:
-    "Meet Lucas — Apex Assist, local student-run help in Brighton Central for tutoring, tech, gardening, and home support.",
+    "Meet Lucas: Apex Assist, local student-run help in Brighton Central for tutoring, tech, gardening, and home support.",
 };
 
 export default function AboutPage() {
@@ -19,14 +19,14 @@ export default function AboutPage() {
           About
         </p>
         <h1 className="mt-4 text-3xl font-semibold tracking-tight text-ink dark:text-zinc-100 sm:text-4xl">
-          About me — Lucas
+          About me: Lucas
         </h1>
         <div className="mt-8 space-y-5 text-[17px] leading-relaxed text-ink/75 dark:text-zinc-300">
           <p>
             I&apos;m <strong className="font-medium text-ink dark:text-zinc-100">Lucas</strong>. I&apos;m
             fourteen, in Year 9, and I live in Brighton.{" "}
             <strong className="font-medium text-ink dark:text-zinc-100">Apex Assist</strong> is my small
-            business — I&apos;m trying to get it up and running, grow it over time,
+            business. I&apos;m trying to get it up and running, grow it over time,
             and use it to help my local community lighten the load where I can. Some of
             what I offer is{" "}
             <strong className="font-medium text-ink dark:text-zinc-100">tutoring</strong>,{" "}
@@ -59,23 +59,23 @@ export default function AboutPage() {
             I&apos;d like my studies to lead. I want to take{" "}
             <strong className="font-medium text-ink dark:text-zinc-100">zoological and biological science</strong>{" "}
             at university, and when I grow up I hope to{" "}
-            <strong className="font-medium text-ink dark:text-zinc-100">study and research animals</strong>{" "}
-            — including <strong className="font-medium text-ink dark:text-zinc-100">exotic animals</strong>{" "}
+            <strong className="font-medium text-ink dark:text-zinc-100">study and research animals</strong>, including{" "}
+            <strong className="font-medium text-ink dark:text-zinc-100">exotic animals</strong>{" "}
             around the world.
           </p>
           <p>
-            Although I&apos;m a nerd, I also love sport — I train{" "}
+            Although I&apos;m a nerd, I also love sport. I train{" "}
             <strong className="font-medium text-ink dark:text-zinc-100">kickboxing</strong>,{" "}
             <strong className="font-medium text-ink dark:text-zinc-100">tennis</strong>, and{" "}
             <strong className="font-medium text-ink dark:text-zinc-100">bouldering</strong> each week. I
-            collect <strong className="font-medium text-ink dark:text-zinc-100">Pokémon</strong> cards too
-            — mostly with an investing and trading focus, so I&apos;m deliberate about
+            collect <strong className="font-medium text-ink dark:text-zinc-100">Pokémon</strong> cards too,
+            mostly with an investing and trading focus, so I&apos;m deliberate about
             what I buy rather than spending casually on packs.
           </p>
           <p>
             Apex Assist is only <em>me</em> for now. However, if I&apos;m ever
             double-booked or
-            can&apos;t make a time, I might suggest someone I trust to step in — only
+            can&apos;t make a time, I might suggest someone I trust to step in, only
             if you&apos;re happy with that and we&apos;ve talked about it first.
           </p>
         </div>

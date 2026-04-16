@@ -16,7 +16,7 @@ export async function generateStaticParams() {
 
 export async function generateMetadata({ params }: Props) {
   const { slug } = await params;
-  if (!isServiceSlug(slug)) return { title: "Service — Apex Assist" };
+  if (!isServiceSlug(slug)) return { title: "Service | Apex Assist" };
   const s = servicesBySlug[slug as ServiceSlug];
   return {
     title: s.title,
