@@ -24,7 +24,7 @@ export default function ContactPage() {
         <p className="mt-4 text-[17px] leading-relaxed text-ink/70 dark:text-zinc-400">
           Use the form below and I&apos;ll get back to you as soon as I can.
         </p>
-        <div className="mt-8 h-[871px] w-full overflow-hidden rounded-[20px] border-2 border-emerald-800 dark:border-primary">
+        <div className="mt-8 h-[1220px] w-full overflow-hidden rounded-[20px]">
           <iframe
             src="https://links.brightpathcreative.com.au/widget/form/qDmhkmNeuoJjlzyftHRU"
             style={{ width: "100%", height: "100%", border: "none", borderRadius: "20px" }}
