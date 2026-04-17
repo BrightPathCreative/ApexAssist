@@ -1,7 +1,6 @@
 import { ChevronRight } from "lucide-react";
 import Link from "next/link";
 import { AREA_LABEL } from "@/lib/location";
-import { SMS_E164 } from "@/lib/site";
 
 const navLinks = [
   {
@@ -48,12 +47,12 @@ export default function HomePage() {
             below is its own page, so tap through in your own time.
           </p>
           <div className="mt-10 flex justify-center">
-            <a
-              href={`sms:${SMS_E164}`}
-              className="inline-flex w-full max-w-xs items-center justify-center rounded-xl border-2 border-white/35 bg-ink px-8 py-4 text-[17px] font-medium text-white shadow-sm transition hover:bg-ink/90 active:scale-[0.99] dark:border-primary dark:bg-zinc-100 dark:text-zinc-950 dark:hover:bg-white sm:w-auto"
+            <Link
+              href="/contact"
+              className="inline-flex w-full max-w-xs items-center justify-center rounded-full border-2 border-emerald-800 bg-white px-8 py-4 text-[17px] font-medium text-ink shadow-sm transition hover:border-emerald-950 hover:bg-primary/40 active:scale-[0.99] dark:border-primary dark:bg-zinc-900 dark:text-zinc-100 dark:hover:border-primary-muted dark:hover:bg-emerald-800/45 sm:w-auto"
             >
               Contact me
-            </a>
+            </Link>
           </div>
         </div>
       </section>
