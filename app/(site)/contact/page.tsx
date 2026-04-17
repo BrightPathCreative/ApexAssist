@@ -1,7 +1,5 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { ContactForm } from "@/components/contact-form";
-import { SMS_E164, SMS_LABEL } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Contact",
@@ -24,19 +22,26 @@ export default function ContactPage() {
           Contact
         </h1>
         <p className="mt-4 text-[17px] leading-relaxed text-ink/70 dark:text-zinc-400">
-          The fastest way to reach me is a text. You can also use the form, which lines
-          up your details, then you tap once to open your texting app and send.
+          Use the form below and I&apos;ll get back to you as soon as I can.
         </p>
-        <div className="mt-8 rounded-2xl border-2 border-emerald-800 bg-primary/50 p-6 dark:border-primary dark:bg-emerald-800/35 sm:p-8">
-          <p className="mb-6 text-center">
-            <a
-              href={`sms:${SMS_E164}`}
-              className="text-lg font-semibold text-ink underline decoration-ink/25 underline-offset-4 hover:decoration-ink/50 dark:text-zinc-100 dark:decoration-zinc-600 dark:hover:decoration-zinc-400"
-            >
-              {SMS_LABEL}
-            </a>
-          </p>
-          <ContactForm />
+        <div className="mt-8 h-[871px] w-full overflow-hidden rounded-[20px] border-2 border-emerald-800 dark:border-primary">
+          <iframe
+            src="https://links.brightpathcreative.com.au/widget/form/qDmhkmNeuoJjlzyftHRU"
+            style={{ width: "100%", height: "100%", border: "none", borderRadius: "20px" }}
+            id="inline-qDmhkmNeuoJjlzyftHRU"
+            data-layout="{'id':'INLINE'}"
+            data-trigger-type="alwaysShow"
+            data-trigger-value=""
+            data-activation-type="alwaysActivated"
+            data-activation-value=""
+            data-deactivation-type="neverDeactivate"
+            data-deactivation-value=""
+            data-form-name="Form 7"
+            data-height="871"
+            data-layout-iframe-id="inline-qDmhkmNeuoJjlzyftHRU"
+            data-form-id="qDmhkmNeuoJjlzyftHRU"
+            title="Form 7"
+          />
         </div>
       </div>
     </main>

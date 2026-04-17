@@ -52,7 +52,7 @@ export default function HomePage() {
               href={`sms:${SMS_E164}`}
               className="inline-flex w-full max-w-xs items-center justify-center rounded-xl border-2 border-white/35 bg-ink px-8 py-4 text-[17px] font-medium text-white shadow-sm transition hover:bg-ink/90 active:scale-[0.99] dark:border-primary dark:bg-zinc-100 dark:text-zinc-950 dark:hover:bg-white sm:w-auto"
             >
-              Text me
+              Contact me
             </a>
           </div>
         </div>

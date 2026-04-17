@@ -93,7 +93,7 @@ export default async function ServicePage({ params }: Props) {
             href="/contact"
             className="inline-flex items-center justify-center rounded-xl bg-ink px-6 py-3.5 text-[15px] font-medium text-white transition hover:bg-ink/90 dark:bg-zinc-100 dark:text-zinc-950 dark:hover:bg-white"
           >
-            Text me about this service
+            Contact me about this service
           </Link>
           <Link
             href="/services"

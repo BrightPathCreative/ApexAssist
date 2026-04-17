@@ -58,7 +58,7 @@ export default function HoursPage() {
             href="/contact"
             className="font-medium text-ink underline decoration-ink/30 underline-offset-4 dark:text-zinc-300 dark:decoration-zinc-600"
           >
-            Text or message me →
+            Contact me →
           </Link>
         </p>
       </div>
