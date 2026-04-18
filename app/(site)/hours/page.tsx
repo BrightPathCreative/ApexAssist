@@ -46,10 +46,10 @@ export default function HoursPage() {
         </ul>
         <p className="mt-6 text-[17px] leading-relaxed text-ink/70 dark:text-zinc-400">
           Public holidays and school breaks can add or remove time slots compared with my
-          usual hours, so text me if you&apos;re unsure.
+          usual hours, so contact me if you&apos;re unsure.
         </p>
         <p className="mt-6 text-sm text-ink/55 dark:text-zinc-500">
-          Text me for the next Saturday I&apos;m on, or to discuss online tutoring
+          Contact me for the next Saturday I&apos;m on, or to discuss online tutoring
           times. When I&apos;m booked out, I may suggest a trusted friend for tutoring
           or hands-on help, only if you&apos;re comfortable with that.
         </p>
