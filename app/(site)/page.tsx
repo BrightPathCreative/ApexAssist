@@ -100,11 +100,11 @@ export default function HomePage() {
       </section>
 
       <section className="border-t-2 border-emerald-800/35 bg-primary px-5 py-14 sm:py-16 dark:border-primary/40 dark:bg-zinc-950">
-        <div className="mx-auto flex max-w-3xl flex-col gap-6 lg:flex-row lg:items-start lg:gap-10">
-          <h2 className="shrink-0 text-left text-xl font-semibold tracking-tight text-ink dark:text-zinc-100 sm:text-2xl lg:pt-1 lg:max-w-[11rem]">
+        <div className="mx-auto max-w-3xl">
+          <h2 className="text-center text-xl font-semibold tracking-tight text-ink dark:text-zinc-100 sm:text-2xl">
             Learn About Me
           </h2>
-          <div className="min-w-0 flex-1 rounded-2xl border-2 border-emerald-800 bg-white px-5 py-5 shadow-sm dark:border-primary dark:bg-zinc-900 sm:px-6 sm:py-6">
+          <div className="mt-5 rounded-2xl border-2 border-emerald-800 bg-white px-5 py-5 shadow-sm dark:border-primary dark:bg-zinc-900 sm:mt-6 sm:px-6 sm:py-6">
             <p className="text-[17px] leading-relaxed text-ink/75 dark:text-zinc-300">
               I&apos;m <strong className="font-medium text-ink dark:text-zinc-100">Lucas</strong>. I&apos;m
               fourteen, in Year 9, and I live in Brighton.{" "}
@@ -134,7 +134,7 @@ export default function HomePage() {
           <div className="rounded-2xl border-2 border-emerald-800 bg-white px-6 py-6 shadow-sm dark:border-primary dark:bg-zinc-900 sm:px-8 sm:py-8">
             <div className="flex flex-col items-stretch gap-5 sm:flex-row sm:items-center sm:justify-between sm:gap-6">
               <p className="text-center text-lg font-semibold text-ink dark:text-zinc-100 sm:text-left sm:text-xl">
-                Ready to contact me?
+                Ready to lighten the load?
               </p>
               <Link
                 href="/contact"
