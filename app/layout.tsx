@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Outfit } from "next/font/google";
 import Script from "next/script";
+import { Analytics } from "@vercel/analytics/next";
 import { AREA_LABEL } from "@/lib/location";
 import "./globals.css";
 
@@ -33,6 +34,7 @@ export default function RootLayout({
           {`(function(){try{var t=localStorage.getItem("apex-assist-theme");if(t==="dark")document.documentElement.classList.add("dark")}catch(e){}})()`}
         </Script>
         {children}
+        <Analytics />
       </body>
     </html>
   );
