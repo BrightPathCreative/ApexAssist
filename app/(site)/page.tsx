@@ -140,7 +140,7 @@ export default function HomePage() {
                 href="/contact"
                 className="inline-flex shrink-0 items-center justify-center rounded-full border-2 border-emerald-800 bg-primary/40 px-8 py-3.5 text-center text-[17px] font-medium text-ink shadow-sm transition hover:border-emerald-950 hover:bg-primary/60 active:scale-[0.99] dark:border-primary dark:bg-emerald-800/35 dark:text-zinc-100 dark:hover:border-primary-muted dark:hover:bg-emerald-800/50 sm:min-w-[11rem]"
               >
-                Contact Me
+                Contact me
               </Link>
             </div>
           </div>
