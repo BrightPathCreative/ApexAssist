@@ -129,7 +129,7 @@ export const servicesBySlug: Record<ServiceSlug, ServiceDefinition> = {
       "Green-waste bagging and tidying outdoor areas",
       "Simple planting or watering as agreed",
       "Outdoor furniture or bins moved only when safe and reasonable",
-      "Straightforward outdoor repairs where it makes sense (e.g. stabilising or patching a planter box). I may already have tools that suit; it depends on the job, so text me with a quick description or a photo",
+      "Straightforward outdoor repairs where it makes sense (e.g. stabilising or patching a planter box). I may already have tools that suit; it depends on the job, so contact me with a quick description or a photo",
     ],
     note: "Bigger work is fine when we schedule it. I can bring extra people for a weekend push if the job needs it. Anything that needs heavy machinery, regulated trades, or specialist equipment is something I’ll flag honestly so you’re not left wondering.",
   },

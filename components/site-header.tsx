@@ -47,7 +47,7 @@ export function SiteHeader() {
             href="/contact"
             className="rounded-full border-2 border-emerald-800 bg-white px-4 py-2 text-sm font-medium text-ink shadow-sm transition hover:border-emerald-950 hover:bg-primary/40 dark:border-primary dark:bg-zinc-900 dark:text-zinc-100 dark:hover:border-primary-muted dark:hover:bg-emerald-800/45"
           >
-            Text me
+            Contact me
           </Link>
         </div>
       </div>
