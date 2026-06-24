@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import Script from "next/script";
+import { GhlContactForm } from "@/components/ghl-contact-form";
 
 export const metadata: Metadata = {
   title: "Contact",
@@ -25,26 +25,7 @@ export default function ContactPage() {
         <p className="mt-4 text-[17px] leading-relaxed text-ink/70 dark:text-zinc-400">
           Use the form below and I&apos;ll get back to you as soon as I can.
         </p>
-        <div className="mt-8 h-[520px] w-full overflow-hidden rounded-[20px]">
-          <iframe
-            src="https://links.brightpathcreative.com.au/widget/form/dSgoil9oLaAq9c8SfUUY"
-            style={{ width: "100%", height: "100%", border: "none", borderRadius: "20px" }}
-            id="inline-dSgoil9oLaAq9c8SfUUY"
-            data-layout="{'id':'INLINE'}"
-            data-trigger-type="alwaysShow"
-            data-trigger-value=""
-            data-activation-type="alwaysActivated"
-            data-activation-value=""
-            data-deactivation-type="neverDeactivate"
-            data-deactivation-value=""
-            data-form-name="Apex Assist Enquiry form"
-            data-height="485"
-            data-layout-iframe-id="inline-dSgoil9oLaAq9c8SfUUY"
-            data-form-id="dSgoil9oLaAq9c8SfUUY"
-            title="Apex Assist Enquiry form"
-          />
-        </div>
-        <Script src="https://links.brightpathcreative.com.au/js/form_embed.js" strategy="afterInteractive" />
+        <GhlContactForm />
       </div>
     </main>
   );
