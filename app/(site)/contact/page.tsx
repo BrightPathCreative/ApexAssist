@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Script from "next/script";
 
 export const metadata: Metadata = {
   title: "Contact",
@@ -24,11 +25,11 @@ export default function ContactPage() {
         <p className="mt-4 text-[17px] leading-relaxed text-ink/70 dark:text-zinc-400">
           Use the form below and I&apos;ll get back to you as soon as I can.
         </p>
-        <div className="mt-8 h-[1220px] w-full overflow-hidden rounded-[20px]">
+        <div className="mt-8 h-[520px] w-full overflow-hidden rounded-[20px]">
           <iframe
-            src="https://links.brightpathcreative.com.au/widget/form/qDmhkmNeuoJjlzyftHRU"
+            src="https://links.brightpathcreative.com.au/widget/form/dSgoil9oLaAq9c8SfUUY"
             style={{ width: "100%", height: "100%", border: "none", borderRadius: "20px" }}
-            id="inline-qDmhkmNeuoJjlzyftHRU"
+            id="inline-dSgoil9oLaAq9c8SfUUY"
             data-layout="{'id':'INLINE'}"
             data-trigger-type="alwaysShow"
             data-trigger-value=""
@@ -36,13 +37,14 @@ export default function ContactPage() {
             data-activation-value=""
             data-deactivation-type="neverDeactivate"
             data-deactivation-value=""
-            data-form-name="Form 7"
-            data-height="871"
-            data-layout-iframe-id="inline-qDmhkmNeuoJjlzyftHRU"
-            data-form-id="qDmhkmNeuoJjlzyftHRU"
-            title="Form 7"
+            data-form-name="Apex Assist Enquiry form"
+            data-height="485"
+            data-layout-iframe-id="inline-dSgoil9oLaAq9c8SfUUY"
+            data-form-id="dSgoil9oLaAq9c8SfUUY"
+            title="Apex Assist Enquiry form"
           />
         </div>
+        <Script src="https://links.brightpathcreative.com.au/js/form_embed.js" strategy="afterInteractive" />
       </div>
     </main>
   );
